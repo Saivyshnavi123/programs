@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Services - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <h1>Passport Services</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-container">
+        <!-- Left Column: Image -->
+        <div class="hero-image">
+            <img src="images/banner.webp" alt="Passport Banner">
+        </div>
+
+        <!-- Right Column: Text -->
+        <div class="hero-text">
+            <h2>Apply for Your Passport Easily!</h2>
+            <p>Fast, Secure, and Hassle-Free Processing.</p>
+            <a href="login.html" class="btn">Get Started</a>
+        </div>
+    </div>
+
+
+    <div class="about-container">
+        <!-- Left Column: Text -->
+        <div class="about-text">
+            <h2>About Passport Services</h2>
+            <p>
+                We provide an easy and secure way to apply for your passport online.
+                Our system ensures a hassle-free process with real-time status updates.
+                Enjoy a seamless experience with quick approvals and secure data handling.
+            </p>
+        </div>
+
+        <!-- Right Column: Image -->
+        <div class="about-image">
+            <img src="images/passport.jpg" alt="Passport and stamp">
+        </div>
+    </div>
+
+
+    <!-- Features Section -->
+    <div class="why-choose-container">
+        <h2>Why Choose Us?</h2>
+        <div class="why-choose-grid">
+            <!-- Card 1 -->
+            <div class="feature-card">
+                <img src="images/passport.jpg" alt="Fast Processing">
+                <h3>Fast Processing</h3>
+                <p>Get your passport processed within 7-14 working days.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card">
+                <img src="images/1.jpeg" alt="Secure System">
+                <h3>100% Secure</h3>
+                <p>All your personal details are encrypted and stored securely.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card">
+                <img src="images/status.jpg" alt="Real-Time Tracking">
+                <h3>Real-Time Tracking</h3>
+                <p>Check your passport application status anytime, anywhere.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-container">
+        <h2>What Our Users Say</h2>
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <img src="images/user.jpg" alt="User 1">
+                <p>"Applying for my passport online was super easy. Highly recommended!"</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <img src="images/user1.jpeg" alt="User 2">
+                <p>"Real-time status tracking helped me stay updated. Great service!"</p>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Email: support@passportservices.com</p>
+        <p>Phone: +123 456 7890</p>
+        <button class="contact-btn" onclick="openContactForm()">Send a Message</button>
+    </div>
+
+    <!-- Contact Form Popup -->
+    <div id="contactFormPopup" class="popup-container">
+        <div class="popup">
+            <span class="close-btn" onclick="closeContactForm()">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Message Popup -->
+    <div id="thankYouPopup" class="popup-container">
+        <div class="popup">
+            <h2>Thank You!</h2>
+            <p>We have received your message and will contact you soon.</p>
+            <button onclick="closeThankYouPopup()">Close</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Passport Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

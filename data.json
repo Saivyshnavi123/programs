@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "dob": "1990-05-15",
+        "nationality": "American",
+        "user": "john_doe"
+    },
+    {
+        "id": 2,
+        "name": "Alice Smith",
+        "dob": "1985-10-20",
+        "nationality": "British",
+        "user": "alice_smith"
+    }
+]

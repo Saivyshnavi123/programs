@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLoginStatus()">
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>User Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#apply">Apply</a></li>
+                <li><a href="#status">Check Status</a></li>
+                <li><a href="index.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h2>Welcome, <span id="username"></span></h2>
+        <p>Manage your passport applications easily. Submit new applications, check status, and edit or delete applications.</p>
+        <img src="images/banner.webp" alt="Dashboard">
+    </section>
+
+    <!-- Application Form -->
+    <section id="apply">
+        <h2>Apply for a Passport</h2>
+        <form id="applicationForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="date" id="dob" required>
+            <input type="text" id="nationality" placeholder="Nationality" required>
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- Application Status -->
+    <section id="status">
+        <h2>Your Applications</h2>
+        <table id="applicationsTable">
+            <tr>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Nationality</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
